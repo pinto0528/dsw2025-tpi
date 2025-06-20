@@ -1,39 +1,48 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Dsw2025TPI.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// ─── SERVICES ────────────────────────────────────────────────
+
+// Configuración de conexión a SQL Server
+builder.Services.AddDbContext<Dsw2025TpiContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Controladores
+builder.Services.AddControllers();
+
+// Swagger/OpenAPI para documentación automática
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// Servicios personalizados, validadores, etc.
+// builder.Services.AddScoped<IProductService, ProductService>();
+
+// CORS si lo necesitás para frontend externo
+// builder.Services.AddCors(options => { ... });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// ─── MIDDLEWARE ───────────────────────────────────────────────
+
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
-var summaries = new[]
+// Endpoint de prueba simple
+app.MapGet("/api/hello", () =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    return Results.Ok("¡Hola desde tu API!");
+});
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+app.UseHttpsRedirection();
+// app.UseCors("NombreDeTuPolitica");
+// app.UseAuthentication();
+// app.UseAuthorization();
+
+app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

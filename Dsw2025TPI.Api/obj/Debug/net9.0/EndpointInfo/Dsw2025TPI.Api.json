@@ -1,0 +1,22 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Dsw2025TPI.Api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/hello": {
+      "get": {
+        "tags": [
+          "Dsw2025TPI.Api"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

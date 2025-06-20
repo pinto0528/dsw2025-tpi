@@ -1,0 +1,16 @@
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\bin\Debug\net9.0\Dsw2025TPI.Application.deps.json
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\bin\Debug\net9.0\Dsw2025TPI.Application.dll
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\bin\Debug\net9.0\Dsw2025TPI.Application.pdb
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\bin\Debug\net9.0\Dsw2025TPI.Domain.dll
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\bin\Debug\net9.0\Dsw2025TPI.Domain.pdb
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\Dsw2025TPI.Application.csproj.AssemblyReference.cache
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\Dsw2025TPI.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\Dsw2025TPI.Application.AssemblyInfoInputs.cache
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\Dsw2025TPI.Application.AssemblyInfo.cs
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\Dsw2025TPI.Application.csproj.CoreCompileInputs.cache
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\Dsw2025TPI.Application.sourcelink.json
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\Dsw2025T.A41E167C.Up2Date
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\Dsw2025TPI.Application.dll
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\refint\Dsw2025TPI.Application.dll
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\Dsw2025TPI.Application.pdb
+D:\PINTOPC\Facultad\2025\Desarrollo de Software\TPI\dsw2025-tpi\Dsw2025TPI.Application\obj\Debug\net9.0\ref\Dsw2025TPI.Application.dll

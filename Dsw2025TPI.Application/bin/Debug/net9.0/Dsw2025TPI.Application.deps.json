@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Dsw2025TPI.Application/1.0.0": {
+        "dependencies": {
+          "Dsw2025TPI.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Dsw2025TPI.Application.dll": {}
+        }
+      },
+      "Dsw2025TPI.Domain/1.0.0": {
+        "runtime": {
+          "Dsw2025TPI.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dsw2025TPI.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dsw2025TPI.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

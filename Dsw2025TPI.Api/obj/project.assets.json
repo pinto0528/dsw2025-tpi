@@ -1727,7 +1727,8 @@
         "dependencies": {
           "Dsw2025TPI.Application": "1.0.0",
           "Dsw2025TPI.Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.6"
+          "Microsoft.EntityFrameworkCore": "9.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.6"
         },
         "compile": {
           "bin/placeholder/Dsw2025TPI.Data.dll": {}

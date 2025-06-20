@@ -14,5 +14,15 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Dsw2025TPI.Api.Controllers.ProductsController",
+    "Method": "GetProducts",
+    "RelativePath": "api/Products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

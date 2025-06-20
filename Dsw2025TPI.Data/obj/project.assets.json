@@ -1,0 +1,124 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Dsw2025TPI.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Dsw2025TPI.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Dsw2025TPI.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dsw2025TPI.Application.dll": {}
+        }
+      },
+      "Dsw2025TPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Dsw2025TPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dsw2025TPI.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dsw2025TPI.Application/1.0.0": {
+      "type": "project",
+      "path": "../Dsw2025TPI.Application/Dsw2025TPI.Application.csproj",
+      "msbuildProject": "../Dsw2025TPI.Application/Dsw2025TPI.Application.csproj"
+    },
+    "Dsw2025TPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Dsw2025TPI.Domain/Dsw2025TPI.Domain.csproj",
+      "msbuildProject": "../Dsw2025TPI.Domain/Dsw2025TPI.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Dsw2025TPI.Application >= 1.0.0",
+      "Dsw2025TPI.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\nclpn\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\PINTOPC\\Facultad\\2025\\Desarrollo de Software\\TPI\\dsw2025-tpi\\Dsw2025TPI.Data\\Dsw2025TPI.Data.csproj",
+      "projectName": "Dsw2025TPI.Data",
+      "projectPath": "D:\\PINTOPC\\Facultad\\2025\\Desarrollo de Software\\TPI\\dsw2025-tpi\\Dsw2025TPI.Data\\Dsw2025TPI.Data.csproj",
+      "packagesPath": "C:\\Users\\nclpn\\.nuget\\packages\\",
+      "outputPath": "D:\\PINTOPC\\Facultad\\2025\\Desarrollo de Software\\TPI\\dsw2025-tpi\\Dsw2025TPI.Data\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\nclpn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "D:\\PINTOPC\\Facultad\\2025\\Desarrollo de Software\\TPI\\dsw2025-tpi\\Dsw2025TPI.Application\\Dsw2025TPI.Application.csproj": {
+              "projectPath": "D:\\PINTOPC\\Facultad\\2025\\Desarrollo de Software\\TPI\\dsw2025-tpi\\Dsw2025TPI.Application\\Dsw2025TPI.Application.csproj"
+            },
+            "D:\\PINTOPC\\Facultad\\2025\\Desarrollo de Software\\TPI\\dsw2025-tpi\\Dsw2025TPI.Domain\\Dsw2025TPI.Domain.csproj": {
+              "projectPath": "D:\\PINTOPC\\Facultad\\2025\\Desarrollo de Software\\TPI\\dsw2025-tpi\\Dsw2025TPI.Domain\\Dsw2025TPI.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hWBTMT8scug=",
+  "success": true,
+  "projectFilePath": "D:\\PINTOPC\\Facultad\\2025\\Desarrollo de Software\\TPI\\dsw2025-tpi\\Dsw2025TPI.Api\\Dsw2025TPI.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nclpn\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "C:\\Users\\nclpn\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

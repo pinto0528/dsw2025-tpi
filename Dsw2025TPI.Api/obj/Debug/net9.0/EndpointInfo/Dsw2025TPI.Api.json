@@ -53,6 +53,52 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Request"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Request"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -190,6 +236,36 @@
               "$ref": "#/components/schemas/OrderItem"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Request": {
+        "type": "object",
+        "properties": {
+          "sku": {
+            "type": "string",
+            "nullable": true
+          },
+          "internalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "currentUnitPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "stockQuantity": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

@@ -34,5 +34,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Dsw2025TPI.Api.Controllers.ProductController",
+    "Method": "CreateProductAsync",
+    "RelativePath": "api/products",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Dsw2025Ej15.Application.Dtos.ProductModel\u002BRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dsw2025TPI.Domain.Entities.Product",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

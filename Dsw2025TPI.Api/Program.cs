@@ -1,5 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Dsw2025TPI.Data;
+using Dsw2025TPI.Data.Repositories;
+using Dsw2025TPI.Domain.Interfaces;
+using Dsw2025TPI.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,8 +19,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Servicios personalizados, validadores, etc.
-// builder.Services.AddScoped<IProductService, ProductService>();
+// Servicios
+builder.Services.AddScoped(typeof(IRepository<>), typeof(SQLRepository<>));
+builder.Services.AddScoped<ProductService>();
 
 // CORS si lo necesitás para frontend externo
 // builder.Services.AddCors(options => { ... });

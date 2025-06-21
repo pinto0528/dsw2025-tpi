@@ -3,6 +3,7 @@ using Dsw2025TPI.Data;
 using Dsw2025TPI.Data.Repositories;
 using Dsw2025TPI.Domain.Interfaces;
 using Dsw2025TPI.Api.Services;
+using Dsw2025TPI.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,8 @@ builder.Services.AddScoped<ProductService>();
 var app = builder.Build();
 
 // ─── MIDDLEWARE ───────────────────────────────────────────────
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {

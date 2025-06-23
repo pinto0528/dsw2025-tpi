@@ -32,6 +32,18 @@ namespace Dsw2025TPI.Domain.Entities
             IsActive = false;
         }
 
+        public void DecreaseStock(int quantity)
+        {
+            if (quantity <= 0)
+                throw new ArgumentException("La cantidad a descontar debe ser mayor a cero.");
+
+            if (StockQuantity < quantity)
+                throw new InvalidOperationException($"Stock insuficiente. Disponible: {StockQuantity}, solicitado: {quantity}.");
+
+            StockQuantity -= quantity;
+        }
+
+
         public List<OrderItem> OrderItems { get; set; } = new();
     }
 }

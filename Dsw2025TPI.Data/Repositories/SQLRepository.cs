@@ -53,6 +53,13 @@ namespace Dsw2025TPI.Data.Repositories
         public async Task<T?> GetByIdAsync(Guid id, params string[] include)
             => await Include(_context.Set<T>(), include).FirstOrDefaultAsync(e => e.Id == id);
 
+        public async Task<IEnumerable<T>> GetByIdsAsync(IEnumerable<Guid> ids)
+        {
+            return await _context.Set<T>()
+                .Where(e => ids.Contains(EF.Property<Guid>(e, "Id")))
+                .ToListAsync();
+        }
+
         public async Task<T> CreateAsync(T entity)
         {
             await _context.Set<T>().AddAsync(entity);
@@ -66,6 +73,10 @@ namespace Dsw2025TPI.Data.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task<bool> ExistsAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().AnyAsync(predicate);
+        }
     }
 }
 

@@ -13,7 +13,11 @@ namespace Dsw2025TPI.Domain.Interfaces
         Task<T?> FirstAsync(Expression<Func<T, bool>> predicate, params string[] includes);
         Task<IEnumerable<T>> GetAllAsync(params string[] includes);
         Task<T?> GetByIdAsync(Guid id, params string[] include);
+        Task<IEnumerable<T>> GetByIdsAsync(IEnumerable<Guid> ids);
         Task<T> CreateAsync(T entity);
         Task UpdateAsync(T entity);
+        Task<bool> ExistsAsync(Expression<Func<T, bool>> predicate);
+        
+
     }
 }

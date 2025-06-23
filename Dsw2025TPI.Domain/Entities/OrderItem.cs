@@ -8,6 +8,13 @@ namespace Dsw2025TPI.Domain.Entities
 {
     public class OrderItem : EntityBase
     {
+        public OrderItem(Guid ProductId, int quantity, decimal unitPrice)
+        {
+            this.ProductId = ProductId;
+            Quantity = quantity;
+            UnitPrice = unitPrice;
+        }
+
         public Guid ProductId { get; set; }
         public Product Product { get; set; } = null!;
 

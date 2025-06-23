@@ -4,6 +4,8 @@ using Dsw2025TPI.Data.Repositories;
 using Dsw2025TPI.Domain.Interfaces;
 using Dsw2025TPI.Api.Services;
 using Dsw2025TPI.Api.Middlewares;
+using Dsw2025TPI.Application.Services;
+using Dsw2025TPI.Application.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,9 +22,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 // Servicios
 builder.Services.AddScoped(typeof(IRepository<>), typeof(SQLRepository<>));
 builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<OrderService>();
+
+builder.Services.AddScoped<OrderValidationHelper>();
 
 // CORS si lo necesitás para frontend externo
 // builder.Services.AddCors(options => { ... });

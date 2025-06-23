@@ -36,4 +36,17 @@ public class ProductController : ControllerBase
         var createdProduct = await _service.CreateAsync(request);
         return CreatedAtAction(nameof(GetById), new { id = createdProduct.Id }, createdProduct);
     }
+
+    [HttpPut("{id}")]
+    [ProducesResponseType(typeof(ProductModel.Response), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(object), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(object), StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<ProductModel.Response>> UpdateProductAsync(Guid id, [FromBody] ProductModel.Request request)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var updated = await _service.UpdateAsync(id, request);
+        return Ok(updated);
+    }
 }

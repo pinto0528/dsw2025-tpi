@@ -49,4 +49,14 @@ public class ProductController : ControllerBase
         var updated = await _service.UpdateAsync(id, request);
         return Ok(updated);
     }
+
+    [HttpPatch("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(object), StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> DeactivateProductAsync(Guid id)
+    {
+        await _service.DeactivateAsync(id);
+        return NoContent(); // 204: éxito sin cuerpo
+    }
+
 }

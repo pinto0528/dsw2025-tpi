@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Dsw2025TPI.Domain.Entities
 {
-    public class OrderItem
+    public class OrderItem : EntityBase
     {
-        public Guid Id { get; set; }
-
         public Guid ProductId { get; set; }
         public Product Product { get; set; } = null!;
 

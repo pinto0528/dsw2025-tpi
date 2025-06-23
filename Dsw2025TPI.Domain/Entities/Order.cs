@@ -7,10 +7,8 @@ using Dsw2025TPI.Domain.Enums;
 
 namespace Dsw2025TPI.Domain.Entities
 {
-    public class Order
+    public class Order : EntityBase
     {
-        public Guid Id { get; set; }
-
         public DateTime Date { get; set; }
         public string ShippingAddress { get; set; } = null!;
         public string BillingAddress { get; set; } = null!;
